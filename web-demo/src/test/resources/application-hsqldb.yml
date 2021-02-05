@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:hsqldb:mem:db_test # 以内存数据库的方式来运行.
+    username: root
+    password: 123456
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    platform: hsqldb
+    schema: classpath:db/schema.sql
+    data: classpath:db/data.sql
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none # 这里没用 JPA 的自动生成表结构等功能，你可以视自己的具体情况来开启.
+    generate-ddl: false # 启动时是否初始化数据库.
