@@ -20,7 +20,8 @@
     <modules>
         <module>web-demo</module>
         <module>cache-demo</module>
-     
+        <module>web-socket-demo</module>
+
     </modules>
 
 
